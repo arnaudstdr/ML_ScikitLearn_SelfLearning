@@ -1,20 +1,19 @@
 # Notes de "Machine Learning avec Scikit-learn"
 
-## Table des matières
-- [Notes de "Machine Learning avec Scikit-learn"](#notes-de-machine-learning-avec-scikit-learn)
-  - [Table des matières](#table-des-matières)
-  - [Ce Dépôt contient](#ce-dépôt-contient)
-  - [Objectif](#objectif)
-  - [Contenu](#contenu)
-  - [Comment utiliser ce dépôt](#comment-utiliser-ce-dépôt)
-  - [Dépendances](#dépendances)
-  - [Ressources utiles](#ressources-utiles)
-
 ## Ce Dépôt contient
 - 📚 **Notes Détaillées** sur les concepts abordés dans le livre *Machine Learning avec Scikit-Learn - 3ème édition*.
 - 💻 **Notebooks Jupyter** pour produire et tester les exemples.
 - 🚀 **Projets pratiques** basés sur des cas réels pour appliquer les algorithmes.
 
+## Table des matières
+- [Notes de "Machine Learning avec Scikit-learn"](#notes-de-machine-learning-avec-scikit-learn)
+  - [Ce Dépôt contient](#ce-dépôt-contient)
+  - [Table des matières](#table-des-matières)
+  - [Objectif](#objectif)
+  - [Contenu](#contenu)
+  - [Comment utiliser ce dépôt](#comment-utiliser-ce-dépôt)
+  - [Dépendances](#dépendances)
+  - [Ressources utiles](#ressources-utiles)
 
 ## Objectif
 Explorer les fondamentaux du machine learning, comprendre les algorithmes supervisés et non supervisés, et construire des modèles robustes avec Scikit-Learn.
