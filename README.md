@@ -19,7 +19,7 @@
 Explorer les fondamentaux du machine learning, comprendre les algorithmes supervisés et non supervisés, et construire des modèles robustes avec Scikit-Learn.
 
 ## Contenu
-- **Chapitre 1** : Vue d'ensemble du Machine Learning
+- **[Chapitre 1](/CHAPITRE_1/)** : Vue d'ensemble du Machine Learning
 - **Chapitre 2** : Un projet de Machine Learning de bout en bout
 - **Chapitre 3** : Classification
 - **Chapitre 4** : Entraînement de modèles
