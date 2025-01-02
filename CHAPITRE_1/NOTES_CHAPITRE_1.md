@@ -71,6 +71,26 @@ Date : **29/12/2024**
         <li><strong>Cible</strong> (en anglais <i>target</i>) : Prédiction de valeur numérique.</li>
         <li><strong>Caractéristiques</strong> : Ce sont les atributs ou variables d'une observation.</li>
         <li><strong>Variables explicatives</strong> (ou <i>prédicateurs)</i>: Représentent les caractéristiques de l'observation. Exemple pour une voiture : Km, âge; marque, etc.</li>
+        <li>1. <strong>Qu'est-ce que l'apprentissage supervisé 2 ?<strong></li>
+          <ul>
+            <li>Il s'agit d'une méthode où les données d'entraînement incluent des solutions désirées appelées <stron>étiquettes</strong> (labels).</li>
+          </ul>
+        <li>2. <strong>Qu'est-ce qu'une tâche de classification ?<strong></li>
+          <ul>
+            <li>Une tâche où l'algorithme attribue une catégorie à chaque observation, comme dans un filtre de spam.</li>
+          </ul>
+        <li>3. <strong>Qu'est-ce qu'une variable cible (target) ?<strong></li>
+          <ul>
+            <li>Une valeur numérique ou catégorie à prédire à partir des données d'entraînement.</li>
+          </ul>
+        <li>4. <strong>Quelles sont les caractéristiques ou variables explicative ? ?<strong></li>
+          <ul>
+            <li>Ce sont les attributs ou variable d'une observation, comme l'âge ou le km pour prédire le prix d'une voiture.</li>
+          </ul>
+        <li>5. <strong>Quels sont les exemples d'applications en apprentisaage supervisé ?<strong></li>
+          <ul>
+            <li>Classification d'emails en spam/non-spam, prédiction du prix d'une maison, ou encore détection de fraude.</li>
+          </ul>
       </ul>
     </td>
     <td style="width: 70%; vertical-align: top; padding-left: 10px;">
@@ -93,18 +113,34 @@ Date : **29/12/2024**
                     <li>À aucun moment il est dit à l'algorithme il est dit à quel groupe un visiteurn appartient.</li>
                     <li>Avec l'utilisation d'un algorithme de partitionnement de type <i>classification hiérarchique</i> (en anglais, <i>hierarchical clustering</i>), il subdivisera éventuellement chaque groupe en groupes plus petits.</li>
                     </ul>
+              <li>Il est judicieux de tenter de réduire le nombre de variables des données d'entraînement -> réduire la dimension de l'espace sur lequel vous allez travailler avec un algorithme de réduction de dimension. Exécution plus rapide de l'algorithmz d'apprentissage, les données occuperont moins d'espace sur le disque et en mémoire et dans certains cas possibilité d'avoir de meilleurs résultats.</li>
+              <li>Une des tâches non supervisée d'importance est la <i>détection d'anomalies</i> qui sert principalement pour détecter des transactions de carte bancaire inhabituelles. Il est important d'avoir un jeux de données très propre car le système reçoit essentiellement des observations normales afin d'apprendre à les reconnaître.</li>
             </ul>
-        <li>Exemples, définitions ou schémas</li>
+        <li><strong>Apprentissage semi-supervisé :</strong></li>
+            <ul>
+              <li>L'étiquetage des données prend beaucoup de temps et d'argent, il est courant d'avoir des observations non étiquetées et peu étiquetées.</li>
+              <li>Ce genre d'apprentissage est souvent utilisé pour les services d'hébergement d'images tels que Google Photos. Où en donnant simplement une étiquette par personne reconnu il va classer les photos avec cette personne sous la même étiquette.</li>
+            </ul>
+        <li><strong>Apprentissage auto-supervisé</strong> :</li>
+            <ul>
+              <li>Génére un jeu de données entièrement étiqueté à partir de données totalement dépourvues d'étiquettes. Avec ce nouveau jeu de données, n'importe que algorithme d'apprentissage supervisé peut être utilisé.</li>
+              <li>En général l'étape finale consiste à affiner le modèle sur un jeu de données étiquetées. Ce transfert de connaissance d'une tâche à une autre est appelé <i>apprentissage par transfert</i> et c'est une technique les plus importantes en apprentissage automatique de nos jours, particulièrement avec l'utilisation de réseaux de neurones profonds.</li>
+            </ul>
+        <li><strong>Apprentissage par renforcement :</strong></li>
+            <ul>
+              <li>Cet Apprentissage est très différent. Le système d'apprentissage, appelé <i>agent</i>, observer l'environnement, sélectionner et accomplir des actions et obtenir sois en retour des <i>récompenses</i> ou des <i>pénalités</i>.</li>
+              <li>Il doit apprendre de lui-même quelle est la meilleure stratégie, ou <i>politique</i> pour obtenir autant de récompenses que possible.</li>
+            </ul>
       </ul>
     </td>
   </tr>
 </table>
 
 ### Résumé
-> Résumez ici les points clés, conclusions ou idées principales en 2-3 phrases pour une révision rapide.
-- [ ] Point clé 1
-- [ ] Point clé 2
-- [ ] Action pour approfondir
+> L'apprentissage supervisé utilise des données d'entraînement étiquetées ou non pour apprendre à prédire une variable cible. Les principales tâches incluent :
+- La **classification** (attribuer des catégories, comme dans les filtres de spam).
+- La **régression** (prédire des valeurs numériques, comme le prix d'une voiture).
+> Cette aproche repose sur l'utilisation de caractéristiques (ou variables explicatives) pour construire un modèle capable de généraliser à de nouvelles données.
 
 ### Problèmes rencontrés
 - Pourquoi mon modèle SVM sous-performe avec ce dataset ?
