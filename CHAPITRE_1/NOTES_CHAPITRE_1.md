@@ -2,6 +2,18 @@
 
 Date : **29/12/2024**  
 
+## Table des matières
+- [📚 Vue d'ensemble du Machine Learning](#-vue-densemble-du-machine-learning)
+  - [Table des matières](#table-des-matières)
+  - [Introduction](#introduction)
+    - [Résumé](#résumé)
+  - [Supervision de L'apprentissage](#supervision-de-lapprentissage)
+    - [Résumé](#résumé-1)
+  - [Apprentissage groupé ou apprentissage en ligne](#apprentissage-groupé-ou-apprentissage-en-ligne)
+    - [Résumé](#résumé-2)
+    - [Problèmes rencontrés](#problèmes-rencontrés)
+    - [Liens Jupyter notebook](#liens-jupyter-notebook)
+
 ## Introduction
 
 <table>
@@ -71,26 +83,16 @@ Date : **29/12/2024**
         <li><strong>Cible</strong> (en anglais <i>target</i>) : Prédiction de valeur numérique.</li>
         <li><strong>Caractéristiques</strong> : Ce sont les atributs ou variables d'une observation.</li>
         <li><strong>Variables explicatives</strong> (ou <i>prédicateurs)</i>: Représentent les caractéristiques de l'observation. Exemple pour une voiture : Km, âge; marque, etc.</li>
-        <li>1. <strong>Qu'est-ce que l'apprentissage supervisé 2 ?<strong></li>
-          <ul>
-            <li>Il s'agit d'une méthode où les données d'entraînement incluent des solutions désirées appelées <stron>étiquettes</strong> (labels).</li>
-          </ul>
-        <li>2. <strong>Qu'est-ce qu'une tâche de classification ?<strong></li>
-          <ul>
-            <li>Une tâche où l'algorithme attribue une catégorie à chaque observation, comme dans un filtre de spam.</li>
-          </ul>
-        <li>3. <strong>Qu'est-ce qu'une variable cible (target) ?<strong></li>
-          <ul>
-            <li>Une valeur numérique ou catégorie à prédire à partir des données d'entraînement.</li>
-          </ul>
-        <li>4. <strong>Quelles sont les caractéristiques ou variables explicative ? ?<strong></li>
-          <ul>
-            <li>Ce sont les attributs ou variable d'une observation, comme l'âge ou le km pour prédire le prix d'une voiture.</li>
-          </ul>
-        <li>5. <strong>Quels sont les exemples d'applications en apprentisaage supervisé ?<strong></li>
-          <ul>
-            <li>Classification d'emails en spam/non-spam, prédiction du prix d'une maison, ou encore détection de fraude.</li>
-          </ul>
+        <li>1. <strong>Qu'est-ce que l'apprentissage supervisé 2 ?</strong>
+        </li>
+        <li>2. <strong>Qu'est-ce qu'une tâche de classification ?</strong>
+        </li>
+        <li>3. <strong>Qu'est-ce qu'une variable cible (target) ?</strong>
+        </li>
+        <li>4. <strong>Quelles sont les caractéristiques ou variables explicative ? ?</strong>
+        </li>
+        <li>5. <strong>Quels sont les exemples d'applications en apprentisaage supervisé ?</strong>
+        </li>
       </ul>
     </td>
     <td style="width: 70%; vertical-align: top; padding-left: 10px;">
@@ -141,6 +143,90 @@ Date : **29/12/2024**
 - La **classification** (attribuer des catégories, comme dans les filtres de spam).
 - La **régression** (prédire des valeurs numériques, comme le prix d'une voiture).
 > Cette aproche repose sur l'utilisation de caractéristiques (ou variables explicatives) pour construire un modèle capable de généraliser à de nouvelles données.
+
+
+## Apprentissage groupé ou apprentissage en ligne
+
+<table>
+  <tr>
+    <td style="width: 30%; vertical-align: top; border-right: 1px solid #ccc;">
+      <h3>Mots-clés / Questions</h3>
+        <h4>Mots-clés</h4>
+          <ol>
+            <li><strong>Apprentissage groupé (Batch Learning)</strong> : Méthode d'entraînement sur un lot complet de données fixes.</li>
+            <li><strong>Réentraînement</strong> : Processus consistant à mettre à jour un modèle en réentraînent entièrement avec de nouvelles données.</li>
+            <li><strong>Dégradation du modèle</strong> : Perte de performance dur à l'évolution des données alors que le modèle reste inchangé.</li>
+            <li><strong>Coût en ressources</strong> : Besoins importants en CPU, mémoire, espace disuque et temps pour entraîner un modèle.</li>
+            <li><strong>Apprentissage en ligne</strong> : Entraînement progressif du modèle avec des des données arrivant en continu.</li>
+            <li><strong>Mini-lots</strong> : Petits groupes de données utilisés pour l'entraînement en ligne.</li>
+            <li><strong>Apprentissage hors-mémoire</strong> : Traitement de grande quantités de données trop volumineuses pour tenir en mémoire.</li>
+            <li><strong>Taux d'apprentissage (learning rate)</strong> : Paramètre contrôlant la vitesse d'adaptation du modèle.</li>
+            <li><strong>Dégradation des performances</strong> : Perte de qualité du modèle causée par des données incorrectes ou non représentatives.</li>
+            <li><strong>Surveillance des anomalies</strong> : Processus pour détectet et réagir aux données aberrantes afin d'éviter les biais.</li>
+          </ol>
+        <h4>Questions</h4>
+          <ol>
+            <li>Qu'est-ce que l'apprentissage groupé et comment fonctionne-t-il ?</li>
+            <li>Quels sont les inconvénients principaux de l'apprentissage groupé ?</li>
+            <li>Pourquoi l'apprentissage groupé peut-il poser problème pour des systèmes à évolution rapide ?</li>
+            <li>Quels sont les besoins en ressources pour entraîner un modèle avec méthode ?</li>
+            <li>Qu'est-ce que l'apprentissage en ligne et en quoi diffère-t-il de l'apprentissage groupé ?</li>
+            <li>Quels sont les avantages principaux de l'apprentissage en ligne ?</li>
+            <li>Qu'est-ce qu'un mini-lot, et pourquoi est-il utilisé en apprentissage en ligne ?</li>
+            <li>Comment le taux d'apprentissage influence-t-il le comportement du modèle ?</li>
+            <li>Quels sont les risques associés à l'apprentissage en ligne ?</li>
+            <li>Comment peut-on surveiller et gérer les anomalies dans les données d'entrée ?<li>
+          </ol>
+    </td>
+    <td style="width: 70%; vertical-align: top; padding-left: 10px;">
+      <h3>Notes principales</h3>
+      <h4>Apprentissage groupé</h4>
+        <ul>
+          <li>L'apprentissage groupé consiste à entraîner un modèle sur un lot de données complet et fixe, ce qui nécessite des ressources importantes (CPU, mémoire, espace disque) et du temps. Une fois entraîné, le modèle est utilisé sans apprentissage supplémentaire jusqu'à ce qu'il soit réentraîné avec un nouveau jeu de données complet. Ce mode d'apprendtissage convient pour des systèmes où les données changent lentement.</li>
+          <li>Cependant, il présente des limites :</li>
+              <ul>
+                  <li><strong>Adaptabilité limitée</strong> : Le modèle ne peut pas apprendre progressivement, ce qui peut provoquer une perte de performance si les données évoluent rapidement.</li>
+                  <li><strong>Coût élevé</strong> : L'entraînement complet exige des ressources informatiques importantes, ce qui peut devenir coûteux ou irréalisable pour de grands volumes de données.</li>
+                  <li><strong>Autonomie restreinte</strong> : Pour des dispositifs à ressources limitées (smartphones, engins spatiaux), l'apprentissage groupé est peu adapté.</li>
+              </ul>
+        </ul>
+      <h4>Apprentissage en Ligne</h4>
+        <ul>
+          <li>L'apprentissage en ligne consiste à entraîner un modèle progressivement à partir de nouvelles données, soit une par une, soit par petits groupes appelés <strong>mini-lots</strong>. Chaque étape est rapide et économique, permettant au modèle de s'adapter en temps réel à des donénes évolutives, comme les tendances financières. Cette méthode est également adaptée aux systèmes disposant de ressources limitées, comme un smartphone.</li>
+          <li><strong>Avantages :</strong><li>
+            <ul>
+              <li><strong>Adaptabilité</strong> : Idéal pour des environnements changeants et des systèmes en évolution rapide.</li>
+              <li><strong>Apprentissage hors-mémoire</strong> : Permeet de traiter des volumes de données trop importantes pour être chargés en mémoire.</li>
+            </ul>
+          <li><strong>Limitations :</strong></li>
+            <ul>
+              <li><strong>Sensibilité au taux d'apprentissage :<strong></li>
+                <ul>
+                  <li>Taux élevé : Adaptation rapide, mais risque d'oublier les anciennes données.</li>
+                  <li>Taux faible : Meilleure stabilité, mais mois de réctivité.</li>
+                </ul>
+              <li><strong>Risque de dégradation :</strong> Une mauvaise qualité des nouvelles données peut détériorer les performances du modèles.</li>
+              <li><strong>Surveillance nécessaire :</strong> Les anomalies dans les données d'entrée doivent être détectées et corrigées pour éviter les biais ou les erreurs (exemple : capteurs défectueux ou attaques ciblées).</li>
+            </ul>
+        </ul>
+    </td>
+  </tr>
+</table>
+
+### Résumé
+- **Apprentissage groupé (Batch Learning)** :
+  - Entraîenement complet sur un lot de données fixes.
+  - Convient aux systèmes avec des données évoluant lentement, mais limité en termes d'adaptabilité et coûteux en ressources.
+  - L'apprentissage progressif n'est pas possible, ce qui peut entraîner une perte de performance si les données changent rapidement.
+- **Apprentissage en ligne (Online Learning)** :
+  - Modèle entraîné progressivement avec des données arrivant en continu (une par une ou en mini-lots).
+  - Idéal pour des environnements évolutifs et des sytèmes à ressources limitées.
+  - Sensible au **taux d'apprentissage** :
+    - Un taux élevé favorise une adaptation rapide mais risque de faire oublier les anciennes données.
+    - Un taux faible assure une meilleure stabilité mais ralentit la réactivité.
+  - Nécessite une surveillance des données pour détecter et corriger les anomalies ou données non représentatives.
+- **Action pour approfondir** :
+  - Réviser les conditions d'utilisation des deux méthodes et les impacts sur les performances selon les cas d'usage.
 
 ### Problèmes rencontrés
 - Pourquoi mon modèle SVM sous-performe avec ce dataset ?
